@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend
+spec:
+  containers:
+  - name: frontend
+    image: akhileshsingh1216/frontendimg
+    ports:
+    - containerPort: 3000

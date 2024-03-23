@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  frontend:
+    image: akhileshsingh1216/frontendimg
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  backend:
+    image: akhileshsingh1216/backend-img1
+    ports:
+      - "3001:3001"
+    depends_on:
+      - database
+
+  database:
+    image: akhileshsingh1216/database-img0
+    ports:
+      - "27017:27017"
